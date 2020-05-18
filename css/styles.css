@@ -103,8 +103,6 @@ img {
     margin-bottom: 118px;
 }
 
-/* Кнопки не выравниваются по центру, хотя задала text-aline:center. Не задаю margin:0 auto (марджин наверняка пробивает контейнер) */
-
 .button-log_in {
     display: block;
     font-size: 14px;
@@ -199,7 +197,7 @@ img {
 /* Partners */
 
 .partners {
-    padding-top: 73px;
+    padding-top: 74px;
     padding-bottom: 30px;
 }
 
@@ -234,7 +232,7 @@ img {
     position: absolute;
     bottom: 0;
     right: 0;
-    transform: translateX(-49px);
+    transform: translateX(-122%);
     content: " ";
     width: 32px;
     height: 32px;
@@ -244,22 +242,22 @@ img {
     background-position: center;
 }
 
-.first_partner::after{
+.first_partner::after {
     background-image: url(../images/TV.png);
     background-color: #ff4e50;
 }
 
-.second_partner::after{
+.second_partner::after {
     background-image: url(../images/bulb.png);
     background-color: #ffa507;
 }
 
-.third_partner::after{
+.third_partner::after {
     background-image: url(../images/coffee.png);
-background-color: #1cd7ad;
+    background-color: #1cd7ad;
 }
 
-.fourth_partner::after{
+.fourth_partner::after {
     background-image: url(../images/airplaine.png);
     background-color: #4e73db;
 }
@@ -310,4 +308,106 @@ background-color: #1cd7ad;
     border: 2px solid #ff4e50;
     background-color: #ffffff;
     padding: 13px 70px;
+}
+
+/* media TABLET */
+
+@media (min-width: 768px) and (max-width: 959px) {
+
+    .container {
+        width: 676px;
+    }
+
+    /* MEDIA HEADER */
+    .header-wrapper {
+        background-image: url(../images/img-tablet.png);
+        padding: 38px 0 232px 0;
+    }
+
+    .navigation {
+        width: 676px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        margin-bottom: 150px;
+    }
+
+    .button-list {
+        margin-bottom: 0;
+    }
+
+    .header-title {
+        font-size: 52px;
+        margin-bottom: 38px;
+    }
+
+    /* Отступы 5 */
+
+    .header-title-description {
+        font-size: 24px;
+        margin-bottom: 36px;
+    }
+
+    /* Отступы 2.5 */
+
+    /* MEDIA MAIN */
+
+    .partners {
+        padding-bottom: 38px;
+    }
+
+    .partners-title {
+        margin-bottom: 38px;
+    }
+
+    .partners-list {
+        margin: 0 auto;
+        width: 492px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .partner-list-item {
+        width: 230px;
+        margin-bottom: 60px;
+    }
+
+    .partner-list-item:not(:last-child) {
+        margin-bottom: 60px;
+    }
+
+    .partner-list-item:nth-child(2n) {
+        margin-bottom: 0;
+    }
+
+    .orde_1 {
+        order: 1;
+    }
+
+    .order_2 {
+        order: 3;
+    }
+
+    .order_3 {
+        order: 2;
+    }
+
+    .order_4 {
+        order: 4;
+    }
+
+    /* MEDIA FOOTER */
+
+    .footer-wrapper {
+        padding-bottom: 40px;
+    }
+
+}
+
+/* media DescTop */
+
+@media (min-width: 960px) {
+    
 }
