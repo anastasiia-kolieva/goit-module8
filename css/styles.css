@@ -226,6 +226,42 @@ img {
 
 .partner-list-item-img {
     margin-bottom: 25px;
+    position: relative;
+
+}
+
+.partner-list-item-img::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateX(-49px);
+    content: " ";
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.first_partner::after{
+    background-image: url(../images/TV.png);
+    background-color: #ff4e50;
+}
+
+.second_partner::after{
+    background-image: url(../images/bulb.png);
+    background-color: #ffa507;
+}
+
+.third_partner::after{
+    background-image: url(../images/coffee.png);
+background-color: #1cd7ad;
+}
+
+.fourth_partner::after{
+    background-image: url(../images/airplaine.png);
+    background-color: #4e73db;
 }
 
 .partner-list-item-foto {
@@ -255,3 +291,23 @@ img {
 }
 
 /* Отступ 1,5 */
+
+/* footer */
+
+.footer-wrapper {
+    padding-bottom: 58px;
+    text-align: center;
+}
+
+.footer-button {
+    font-size: 14px;
+    line-height: 1.2;
+    color: #ff4e50;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid #ff4e50;
+    background-color: #ffffff;
+    padding: 13px 70px;
+}
