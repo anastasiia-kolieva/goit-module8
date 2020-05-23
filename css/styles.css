@@ -98,7 +98,7 @@ img {
 
 .button-list {
     display: flex;
-    align-items: center;
+    justify-content: center;
     margin-bottom: 118px;
 }
 
@@ -250,7 +250,7 @@ img {
 }
 
 .partner-list-item-foto {
-    border-radius: 60px;
+    border-radius: 50%;
     margin: 0 auto;
 }
 
@@ -273,12 +273,12 @@ img {
     text-align: center;
 }
 
-.footer-wrapper {
+.button-wrapper {
     padding-bottom: 58px;
     text-align: center;
 }
 
-.footer-button {
+.button-partners {
     font-size: 14px;
     line-height: 1.2;
     color: #ff4e50;
@@ -370,11 +370,11 @@ img {
         order: 4;
     }
 
-    .footer-wrapper {
+    .button-wrapper {
         padding-bottom: 40px;
     }
 
-    .footer-button {
+    .button-partners {
         padding: 13px 30px;
     }
 
@@ -450,11 +450,11 @@ img {
         order: 4;
     }
 
-    .footer-wrapper {
+    .button-wrapper {
         padding-bottom: 74px;
     }
 
-    .footer-button {
+    .button-partners {
         padding: 13px 30px;
     }
 
